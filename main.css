@@ -10,11 +10,10 @@ body {
   width: 100%;
   height: auto;
   font-family: 'Montserrat', sans-serif;
-  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(#000));
-  background: linear-gradient(to top, #000, #000);
+  background: url(img/background1.jpg);
 }
 
-/* general */
+/* paginas general / index */
 .header {
   /* header */
 }
@@ -80,7 +79,7 @@ body {
   margin-left: 50px;
 }
 
-.header .bg-animate .banner-contenedor .banner_title h2 {
+.header .bg-animate .banner-contenedor .banner_title .subtitle {
   font-size: 2.3rem;
   font-weight: bold;
 }
@@ -529,16 +528,16 @@ body {
 }
 
 /*Pagina Contacto */
-/* main */
-.socialnet {
+.main .socialnet {
   width: 100%;
   height: auto;
   border-top: #000;
   -webkit-box-shadow: 0 0 15px 0 #fff;
           box-shadow: 0 0 15px 0 #fff;
+  background: #000;
 }
 
-.socialnet .text__social {
+.main .socialnet .text__social {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,7 +548,7 @@ body {
           flex-direction: row;
 }
 
-.socialnet .text__social .title {
+.main .socialnet .text__social .title {
   color: #fcc203;
   padding: 50px;
   -webkit-box-pack: start;
@@ -559,7 +558,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.socialnet .text__social .parraf {
+.main .socialnet .text__social .parraf {
   color: #fff;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -570,8 +569,7 @@ body {
 }
 
 /* Pagina Galeria */
-/* main */
-.tp {
+.main .tp {
   color: #fff;
   text-shadow: 0 0 3px #fff;
   font-size: 3rem;
@@ -585,7 +583,7 @@ body {
           box-shadow: 0 0 15px 0 #000;
 }
 
-.gallery {
+.main .gallery {
   margin: 10px;
   padding-bottom: 1.5rem;
   display: -ms-grid;
@@ -599,13 +597,13 @@ body {
       grid-template-areas: "img10 img11 img12 img15" "img10 img13 img13 img15" "img10 img17 img17 img15" "img10 img16 img14 img15";
 }
 
-.gallery .gallery__picture {
+.main .gallery .gallery__picture {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.gallery .gallery__picture:before {
+.main .gallery .gallery__picture:before {
   content: " ";
   position: absolute;
   top: 0;
@@ -631,77 +629,77 @@ body {
           justify-content: center;
 }
 
-.gallery .gallery__picture:hover::before {
+.main .gallery .gallery__picture:hover::before {
   -webkit-transform: scale(1) rotate(360deg);
           transform: scale(1) rotate(360deg);
 }
 
-.gallery .gallery__picture--g1 {
+.main .gallery .gallery__picture--g1 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 1;
   grid-area: img10;
 }
 
-.gallery .gallery__picture--g2 {
+.main .gallery .gallery__picture--g2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: img11;
 }
 
-.gallery .gallery__picture--g3 {
+.main .gallery .gallery__picture--g3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: img12;
 }
 
-.gallery .gallery__picture--g4 {
+.main .gallery .gallery__picture--g4 {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: img13;
 }
 
-.gallery .gallery__picture--g5 {
+.main .gallery .gallery__picture--g5 {
   -ms-grid-row: 4;
   -ms-grid-column: 3;
   grid-area: img14;
 }
 
-.gallery .gallery__picture--g6 {
+.main .gallery .gallery__picture--g6 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
   -ms-grid-column: 4;
   grid-area: img15;
 }
 
-.gallery .gallery__picture--g7 {
+.main .gallery .gallery__picture--g7 {
   -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: img16;
 }
 
-.gallery .gallery__picture--g8 {
+.main .gallery .gallery__picture--g8 {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: img17;
 }
 
-.gallery .gallery__img {
+.main .gallery .gallery__img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.conten__video {
+.main .conten__video {
   width: 100%;
   height: auto;
   margin: 30px;
 }
 
-.conten__video .text__video {
+.main .conten__video .text__video {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,8 +710,7 @@ body {
 }
 
 /* Pagina sobre mi */
-/* main */
-.contenido2 {
+.main .contenido2 {
   background: #eb0808;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 72, 4, 0.884)), to(#000000));
   background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884), #000000);
@@ -724,12 +721,12 @@ body {
   position: relative;
 }
 
-.contenido2 .title {
+.main .contenido2 .title {
   font-size: 2.5rem;
   font-family: 'Montserrat', sans-serif;
 }
 
-.contenido2 .img__me {
+.main .contenido2 .img__me {
   width: 90%;
   height: 400px;
   margin: 20px auto;
@@ -738,7 +735,7 @@ body {
   border-radius: 30px;
 }
 
-.contenido2 .parrafo {
+.main .contenido2 .parrafo {
   font-size: 1.3rem;
   text-align: left;
   margin: 20px 50px;
@@ -746,7 +743,7 @@ body {
   color: #fff;
 }
 
-.maps-ubi {
+.main .maps-ubi {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -759,12 +756,12 @@ body {
           align-items: center;
 }
 
-.maps-ubi .content__maps {
+.main .maps-ubi .content__maps {
   height: auto;
   margin: 20px auto;
 }
 
-.maps-ubi .content__maps .text__maps {
+.main .maps-ubi .content__maps .text__maps {
   padding: 30px;
   text-align: center;
   color: #fcc203;
@@ -772,12 +769,13 @@ body {
   font-weight: bold;
 }
 
-/* usuario */
+/* pagina usuario */
 .main .formulario {
   background: #eb0808;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 72, 4, 0.884)), to(#000000));
   background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884), #000000);
   background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884), #000000);
+  padding-bottom: 70px;
 }
 
 .main .formulario .form {
@@ -888,5 +886,86 @@ body {
 
 .main .formulario .form__line {
   position: absolute;
+}
+
+/* media queries */
+@media (max-width: 400px) {
+  /* pagina index */
+  .main {
+    /* pagina galeria */
+    /* .tp{
+            font-size: 1.3rem;
+        }
+        .gallery{
+            grid-template-columns: 1fr, 1fr;
+            grid-template-areas: 
+            "img10 img15"
+            "img10 img15"
+            "img10 img15"
+            "img11 img15"
+            "img12 img16"
+            "img13 img14"
+            "img17 img17"
+            "img17 img17";
+        }
+        video{
+            height: auto;
+        }  */
+  }
+  .main .item__sociales {
+    display: none;
+  }
+  .main .contenido {
+    max-width: 400px;
+  }
+  .main .contenido .title {
+    font-size: 1.5rem;
+  }
+  .main .contenido .parrafo {
+    font-size: 0.8rem;
+    text-align: left;
+    max-width: 400px;
+    padding: 0;
+  }
+  .main .contenido .butt {
+    font-size: 1rem;
+    padding: 10px;
+  }
+  .main #separador {
+    max-width: 400px;
+  }
+  .main #separador .port {
+    width: 150px;
+    padding-top: 150px;
+  }
+  .main #separador .h2 {
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+  }
+  .main #separador .eti {
+    font-size: 1rem;
+  }
+  .main .animai .aosclass {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main .animai2 .aosclass {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .main .animai3 .aosclass {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+/* pagina contacto */
+/* pagina index */
+.footer {
+  background: none;
+}
+
+.footer .footer-title {
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
