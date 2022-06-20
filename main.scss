@@ -1,0 +1,635 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to top, #000,#000,);
+    
+    
+}
+                    /* general */
+.header{
+    .nav-item{
+        padding-left: 120%;
+    }
+    /* header */
+    & .bg-animate{
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, rgba(243, 72, 4, 0.884), #fcc203);
+        position: relative;
+        overflow: hidden;
+        .header_nav{
+            width: 100%;
+            position: absolute;
+            .contenedor{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px 0;
+                h1{
+                    color: #fff;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 3rem;
+                    margin: auto;
+                    text-shadow: 0 0 3px #fff;
+                    padding: 30px;
+                }
+            }
+        }
+        /* subtite header */
+        & .banner-contenedor{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+            & .banner_title{
+                color: #fff;
+                font-family: 'Montserrat', sans-serif;
+                margin-left: 50px;
+                h2{
+                    font-size: 2.3rem;
+                    font-weight: bold;
+                }
+                .llamanos{
+                    color: #000;
+                    text-decoration: none;
+                    display: inline-block;
+                    background: #fff;
+                    margin: 40px 0;
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px;
+                    border-radius: 50%;
+                    border-radius: 1rem 1rem 1rem 1rem;
+                    box-shadow: 0 0 15px 0 #fff;
+                }
+                .llamanos:hover{
+                    color: #fff;
+                    background: #000;
+                    box-shadow: 0 0 15px 0 #000;
+                }
+            
+            }
+            & .banner_img{
+                animation: movimiento 2.5s linear infinite;
+            }
+        }
+        /* burbujas header */
+        & .burbuja{
+            border-radius: 50%;
+            background: #fff;
+            opacity: .3;
+            position: absolute;
+            bottom: -150;
+            animation: burbujas 3s linear infinite ;
+        }
+        .burbuja:nth-child(1){
+            width: 80px;
+            height: 80px;
+            left: 5%;
+            animation-duration: 3s;
+            animation-delay: 3s;
+        }
+        .burbuja:nth-child(2){
+            width: 100px;
+            height: 100px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 5s;
+        }
+        .burbuja:nth-child(3){
+            width: 20px;
+            height: 20px;
+            left: 15%;
+            animation-duration: 1.5s;
+            animation-delay: 7s;
+        }
+        .burbuja:nth-child(4){
+            width: 50px;
+            height: 50px;
+            left: 90%;
+            animation-duration: 6s;
+            animation-delay: 3s;
+        }
+        .burbuja:nth-child(5){
+            width: 70px;
+            height: 70px;
+            left: 65%;
+            animation-duration: 3s;
+            animation-delay: 1s;
+        }
+        .burbuja:nth-child(6){
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        } 
+        .burbuja:nth-child(7){
+            width: 20px;
+            height: 20px;
+            left: 50%;
+            animation-duration: 4s;
+            animation-delay: 5s;
+        }
+        .burbuja:nth-child(8){
+            width: 100;
+            height: 100px;
+            left: 52%;
+            animation-duration: 5s;
+            animation-delay: 5s;
+        }   
+        .burbuja:nth-child(9){
+            width: 65px;
+            height: 65px;
+            left: 51%;
+            animation-duration: 3s;
+            animation-delay: 2s;
+        }       
+        .burbuja:nth-child(10){
+            width: 40px;
+            height: 40px;
+            left: 35%;
+            animation-duration: 3s;
+            animation-delay: 4s;
+        }       
+        @keyframes burbujas{
+            0%{
+                bottom: 0;
+                opacity: 0;
+            }
+            30%{
+                transform: translateX(30px);
+            }
+            50%{
+                opacity: .4;
+            }
+            100%{
+                bottom: 100vh;
+                opacity: 0;
+            }
+        }       
+        @keyframes movimiento{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(30px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+.main{
+    /* redes sociales fixed */
+    .item__sociales{
+        position: fixed;
+        right: 0;
+        top: 40%;
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 100;
+    }
+    [class^="item__sociales"] {
+        background: #000;
+        border-radius: 3%;
+        box-shadow: 0 0 6px 0 #000;
+        border-radius: 1rem 0 0 1rem;
+    }
+    [class^="item__sociales"] a{
+        color: #fff;
+        text-decoration: none;
+        padding: .5rem;
+        display: flex;
+        transition: all .5s;
+    }
+    [class^="item__sociales"] a:hover{
+        color: rgba(0, 185, 31, 0.884);
+    }
+
+    /* wikipedia, que es la fotografia */
+    .contenido{
+        background: #eb0808;
+        background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#eb0808,);
+        background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#eb0808,);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+        .title{
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .img__camara{
+            width: 90%;
+            height: 400px;
+            margin: 20px auto;
+            object-fit: cover;
+            border-radius: 30px;
+        }
+        .parrafo{
+            font-size: 1.3rem;
+            text-align: left;
+            margin: 20px 50px;
+            font-family: 'Montserrat', sans-serif;
+            color: #fff;
+
+        }
+        .butt{
+            color: #000;
+            text-decoration: none;
+            font-size: 1.5rem;
+            background: #fff;
+            padding: 20px;
+            border-radius: 1rem 1rem 1rem 1rem;
+            box-shadow: 0 0 15px 0 #fff;
+        }
+        .butt:hover{
+            color: #fff;
+            background: #000;
+            box-shadow: 0 0 15px 0 #000;
+        }
+    }
+
+    /* separador del header */
+    & #separador{
+        background: #eb0808;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.884),#eb0808,);
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.884),#eb0808,);
+        .port{
+            text-align: center;
+            padding: 100px 0;
+            
+        } 
+        .text-shadow{
+            text-shadow: 0 3px 3px rgba(0, 0, 0, 0.5)
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.5rem; 
+             
+        }
+        a:hover{
+            color: #aa0f89;
+        }
+    }
+    .index__video{
+        background: #000;
+        padding: 30px 0;
+        box-shadow: 0 0 20px 0 #fff;
+    }
+
+    /* cards */
+    .cards{
+        height: auto;
+        font-family:  'Montserrat', sans-serif;;
+    }
+    .card-border{
+        border: 10px solid #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all ease-out 0.2s;
+    }
+    .card-border:hover{
+        transform: scale(1.05);
+    }
+
+    /* aos animated scroll */
+    .animai{
+        color: #fff;
+        background: #000;
+        box-shadow: 0 0 20px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px 0;
+        padding: 50px;
+        
+    }
+    .animai2{
+        color: #fff;
+        background: #000;
+        box-shadow: 0 0 20px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 100px 0;
+        padding: 50px;
+    }
+    .animai3{
+        color: #fff;
+        background: #000;
+        box-shadow: 0 0 20px 0 #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 100px 0;
+        padding: 50px;
+        object-fit: cover;
+    }
+}
+
+.footer{
+    text-align: center;
+    margin: 50px;
+    height: 50vh;
+    padding: 50px;
+    background: url(img/Fotograft.png) no-repeat center center;
+    border-radius: 1rem 1rem 1rem 1rem;
+    .footer-title{
+        color: #fff;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5rem;
+        padding: 20px;
+    }
+    [class^="footer__item"] {
+        display: inline-block;
+        padding: 20px;
+    }
+    [class^="footer__item"] a{
+        color: #fff;
+        font-size: 2rem;
+    }
+    [class^="footer__item"] a:hover{
+        color: #ac7e00;
+    }
+}
+
+                /*Pagina Contacto */
+
+/* main */
+.socialnet{
+    width: 100%;
+    height: auto;
+    border-top: #000;
+    box-shadow: 0 0 15px 0 #fff;
+    .text__social{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        .title{
+            color: #fcc203;
+            padding: 50px;
+            justify-content: flex-start;
+            font-size: 2.2rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .parraf{
+            color: #fff;
+            justify-content: center;
+            padding-top: 150px;
+            padding-bottom: 50px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+                    /* Pagina Galeria */
+
+/* main */
+.tp{
+    color: #fff;
+    text-shadow: 0 0 3px #fff;
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884), #000000);
+    border-bottom: 5px solid #000;
+    box-shadow: 0 0 15px 0 #000;
+}
+.gallery{
+    margin: 10px;
+    padding-bottom: 1.5rem;
+    display: grid;
+    gap: .8em;
+    grid-template-columns: repeat(4,1fr); /* definimos cuantas columnas */
+    grid-auto-rows: 160px; /* filas automaticas se completan cada una con 160px */
+    grid-template-areas: /* grid areas acomodamos las areas */
+    "img10 img11 img12 img15"
+    "img10 img13 img13 img15"
+    "img10 img17 img17 img15"
+    "img10 img16 img14 img15"
+    ;
+    .gallery__picture{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        
+    }
+    .gallery__picture:before{
+        content: " ";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #70705d50;
+        transform: scale(0);
+        transition: transform .4s;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery__picture:hover::before{
+        transform: scale(1) rotate(360deg);
+    }
+    
+    .gallery__picture--g1{
+        grid-area: img10;
+    }
+    .gallery__picture--g2{
+        grid-area: img11;
+    }
+    .gallery__picture--g3{
+        grid-area: img12;
+    }
+    .gallery__picture--g4{
+        grid-area: img13;
+    }
+    .gallery__picture--g5{
+        grid-area: img14;
+    }
+    .gallery__picture--g6{
+        grid-area: img15;
+    }
+    .gallery__picture--g7{
+        grid-area: img16;
+    }
+    .gallery__picture--g8{
+        grid-area: img17;
+    }
+    .gallery__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.conten__video{
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    .text__video{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+                    /* Pagina sobre mi */
+/* main */
+.contenido2{
+    background: #eb0808;
+    background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#000000,);
+    background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#000000,);
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    .title{
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+    .img__me{
+        width: 90%;
+        height: 400px;
+        margin: 20px auto;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    .parrafo{
+        font-size: 1.3rem;
+        text-align: left;
+        margin: 20px 50px;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+    }
+}
+
+.maps-ubi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content__maps{ 
+        height: auto; 
+        margin: 20px auto;
+        .text__maps{
+            padding: 30px;
+            text-align: center;
+            color: #fcc203;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+    }
+}
+
+            /* usuario */
+
+.main{
+    .formulario{
+        background: #eb0808;
+        background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#000000,);
+        background: linear-gradient(to bottom, rgba(243, 72, 4, 0.884),#000000,);
+        .form{
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+            margin: auto;
+            padding: 4.5em 4em;
+            width: 90%;
+            max-width: 400px;
+            background-color: #f7b733;
+            border-radius: 10px;
+            box-shadow: 0 0 6px 0 #fff;
+            .form__title{
+                font-size: 2rem;
+                color: #fff;
+            }
+            .parraf{
+                font-size: 1rem;
+                font-weight: 300;
+                .form__link{
+                    color: #000;
+                    font-weight: bold;
+                }
+            }  
+        }
+        .form__container{
+            margin-top: 2em;
+            display: grid;
+            gap: 20px;
+        }
+        .form__group{
+            position: relative;
+            color: #fff;
+        }
+        .form__input{
+            width: 100%;
+            background: none;
+            color: #fff;
+            font-size: 1rem;
+            padding: .6em .3em;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #000;
+            font-family: 'Roboto', sans-serif;
+        }
+        .form__input:focus + .form__label,
+        .form__input:not(:placeholder-shown) + .form__label{
+            transform: translateY(-12px) scale(.7);
+            transform-origin: left top;
+            color: #fff;
+        }
+        .form__label{
+            font-size: 1rem;
+            color: #000;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            transform: translateY(10px);
+            transition: transform .5s, color .3s;
+        }
+        .form__submit{
+            background-color: #000;
+            color: #fff;
+            font-size: 1rem;
+            font-family: 'Roboto',sans-serif;
+            font-weight: 300;
+            padding: .5em 0;
+            box-shadow: 0 0 6px 0 #000;
+        }
+        .form__submit:hover{
+            background-color: #fff;
+            color: #000;
+            box-shadow: 0 0 6px 0 #fff;
+        }
+        .form__line{
+            position: absolute;
+        }
+    }
+    
+}
+    
+
+

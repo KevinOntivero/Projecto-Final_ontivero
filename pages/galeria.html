@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tags seo -->
+    <title>Galeria</title>
+    <meta name="description" content="Nuestra seccion de fotos, donde encontrara todos nuestros estilos trabajados">
+    <meta name="keywords" content="Galeria, fotos, pictures, estilos, secciones">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- scss -->
+    <link rel="stylesheet" href="../main.css">
+    <!-- icon -->
+    <link rel="icon" href="../img/camaraicon.png">
+    
+</head>
+
+<body>
+    <header class="header">
+        <!-- navbar -->
+        <nav class="navbar  navbar-expand-lg bg-warning">
+            <div class="container-fluid ">
+                <a class="navbar-brand" href="#">
+                <img src="../img/icon.png" alt="logo" width="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="../pages/galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Mas
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../pages/sobre-mi.html">Sobre mi </a></li>
+                        <li><a class="dropdown-item" href="../pages/contacto.html">Contacto</a></li>
+                        <li><a class="dropdown-item" href="../pages/usuario.html">Usuario</a></li>
+                    </ul>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+            <!-- Title -->
+        <div class="bg-animate">
+            <div class="header_nav">
+                <div class="contenedor">
+                    <h1>Un fotografo en el pais</h1>
+                </div>
+            </div>
+            <!-- subtitle -->
+            <div class="banner-contenedor">
+                <section class="banner_title">
+                    <h2>Seccion <br> de Fotos</h2>
+                    <a href="" class="llamanos">Contactame</a>
+                </section>
+                <div class="banner_img">
+                    <img src="../img/camaraicon.png" alt="camara icono" >
+                </div>
+            </div>
+         
+                <!-- animated burbujas -->
+            <div class="burbujas">
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+                <div class="burbuja"></div>
+            </div>
+        </div>
+    </header>
+    
+<!-- Contenido galeria -->
+
+    <main class="main">
+
+        <!-- redes sociales -->
+        <div class="item__sociales">
+            <a href="" class="fa-brands fa-telegram" target="_blank"></a>
+            <a href="" class="fa-brands fa-facebook" target="_blank"></a>
+            <a href="" class="fa-brands fa-twitter" target="_blank"></a>
+            <a href="" class="fa-brands fa-whatsapp" target="_blank"></a>
+        </div>
+        <h2 class="tp">Pictures</h2>
+    
+        <section class="gallery">
+            <figure class="gallery__picture gallery__picture--g1">
+                <img src="../img/img10.jpg" alt="img10" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g2">
+                <img src="../img/img11.jpg" alt="img11" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g3">
+                <img src="../img/img12.jpg" alt="img12" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g4">
+                <img src="../img/img13.jpg" alt="img13" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g5">
+                <img src="../img/img14.jpg" alt="img14" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g6">
+                <img src="../img/img15.jpg" alt="img15" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g7">
+                <img src="../img/img16.jpg" alt="img16" class="gallery__img">
+            </figure>
+            <figure class="gallery__picture gallery__picture--g8">
+                <img src="../img/img17.jpg" alt="img17" class="gallery__img">
+            </figure>
+        </section>
+
+        <!-- video gallery -->
+        <div class="conten__video">
+            <div class="text__video">
+                <video width="100%" height="500" autoplay loop muted>
+                    <source src="../img/video 1.mp4" type="video/mp4" >
+                </video>
+            </div>
+        </div>
+
+        <!-- carrousel -->
+        
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/img18.jpg" class="d-block w-100 img-fluid mb-5"  alt="img18">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Free style</h5>
+                  <p>Fotografia tomada en Italia.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="../img/camara.jpg" class="d-block w-100 img-fluid"  alt="camara">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Camara</h5>
+                  <p>Mi primer camara de fotos, grandes comienzos.</p>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img src="../img/url.jpg" class="d-block w-100 img-fluid"  alt="net">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Dark style</h5>
+                  <p>Mi primer fotografia con Dark style.</p>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <!-- video gallery -->
+        <div class="conten__video">
+            <div class="text__video">
+                <video width="100%" height="500" autoplay loop muted>
+                    <source src="../img/video 2.mp4" type="video/mp4" >
+                </video>
+            </div>
+        </div>
+
+    </main>
+    
+
+
+
+    <footer class="footer">
+        <div class="footer-text">
+            <h2 class="footer-title">Nuestras redes sociales</h2>
+            <a href="#">
+                <button class="btn btn-lg rounded-pill text-light">Contactese</button>
+            </a>
+        </div>
+    
+        <div class="footer__item1">
+            <a href="#">
+                <i class="fa-brands fa-facebook"></i> <!-- Facebook -->
+            </a>
+        </div>
+    
+        <div class="footer__item2">
+            <a href="#">
+                <i class="fa-brands fa-whatsapp"></i> <!-- Whastapp -->
+            </a>
+        </div>
+    
+        <div class="footer__item3">
+            <a href="#">
+                <i class="fa-brands fa-twitter"></i> <!-- Twitter -->
+            </a>
+        </div>
+
+        <div class="footer__item4">
+            <a href="#">
+                <i class="fa-brands fa-telegram"></i> <!-- Telegram -->
+            </a>
+        </div>
+
+    </footer>
+
+
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/cbbad85b0e.js" crossorigin="anonymous"></script>
+    <!-- Js BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
