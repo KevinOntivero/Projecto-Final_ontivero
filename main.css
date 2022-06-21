@@ -18,10 +18,6 @@ body {
   /* header */
 }
 
-.header .nav-item {
-  padding-left: 120%;
-}
-
 .header .bg-animate {
   width: 100%;
   height: 100vh;
@@ -288,6 +284,7 @@ body {
 }
 
 .main {
+  overflow: hidden;
   /* redes sociales fixed */
   /* wikipedia, que es la fotografia */
   /* separador del header */
@@ -891,26 +888,52 @@ body {
 /* media queries */
 @media (max-width: 400px) {
   /* pagina index */
-  .main {
-    /* pagina galeria */
-    /* .tp{
-            font-size: 1.3rem;
-        }
-        .gallery{
-            grid-template-columns: 1fr, 1fr;
-            grid-template-areas: 
-            "img10 img15"
-            "img10 img15"
-            "img10 img15"
-            "img11 img15"
-            "img12 img16"
-            "img13 img14"
-            "img17 img17"
-            "img17 img17";
-        }
-        video{
-            height: auto;
-        }  */
+  .header {
+    width: 100%;
+    height: auto;
+  }
+  .header .bg-animate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .bg-animate .header_nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .header .bg-animate .header_nav .contenedor h1 {
+    padding: 20px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #000;
+  }
+  .header .banner-contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .banner-contenedor .banner_title {
+    max-width: 210px;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 20px;
+  }
+  .header .banner-contenedor .banner_title .subtitle {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .header .banner-contenedor .banner_title .llamanos {
+    text-align: center;
+    font-size: .8rem;
+  }
+  .header .banner-contenedor .banner_img {
+    display: none;
   }
   .main .item__sociales {
     display: none;
@@ -957,15 +980,75 @@ body {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .footer {
+    padding: 10px;
+    background: none;
+    text-align: center;
+  }
 }
 
-/* pagina contacto */
-/* pagina index */
-.footer {
-  background: none;
+/* pagina gallery */
+@media (max-width: 400px) {
+  .main .tp {
+    font-size: 1.5rem;
+  }
+  .main .gallery {
+    width: auto;
+    margin-bottom: 10;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "img10 img15" "img10 img15" "img10 img15" "img11 img15" "img12 img16" "img13 img14 " "img17 img17" "img17 img17";
+  }
+  .main .gallery .gallery__img {
+    width: 100%;
+  }
+  .main .conten__video {
+    margin: 0;
+    height: auto;
+  }
+  .main .carrousel {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
 }
 
-.footer .footer-title {
-  font-size: 1.5rem;
+/* pagina sobre mi */
+@media (max-width: 400px) {
+  .main {
+    overflow: hidden;
+  }
+  .main .maps-ubi {
+    width: 100%;
+  }
+  .main .maps-ubi .content__maps {
+    margin: 0;
+  }
+}
+
+/*pagina contacto*/
+@media (max-width: 400px) {
+  .main .socialnet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .socialnet .text__social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .socialnet .text__social .parraf {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* pagina usuario */
+@media (max-width: 400px) {
+  .main .formulario {
+    padding-top: 20px;
+    margin-top: 0;
+  }
 }
 /*# sourceMappingURL=main.css.map */

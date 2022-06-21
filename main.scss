@@ -14,9 +14,6 @@ body{
 }
                 /* paginas general / index */
 .header{
-    .nav-item{
-        padding-left: 120%;
-    }
     /* header */
     & .bg-animate{
         width: 100%;
@@ -190,6 +187,7 @@ body{
 }
 
 .main{
+    overflow: hidden;
     /* redes sociales fixed */
     .item__sociales{
         position: fixed;
@@ -646,11 +644,48 @@ body{
  @media(max-width:400px){
     /* pagina index */
     .header{
-        display: inline-block;
+        width: 100%;
+        height: auto;
+        & .bg-animate{
+            display: flex;
+            .header_nav{
+                flex-direction: column;
+                height: auto;
+                .contenedor{
+                    h1{
+                        padding: 20px;
+                        font-size: 1.8rem;
+                        text-align: center;
+                        color: #000;
+                    }     
+                }
+            }   
+        }
+        & .banner-contenedor{
+            display: flex;
+            .banner_title{
+                max-width: 210px;
+                height: auto;
+                flex-direction: column;
+                padding: 20px;
+                .subtitle{
+                    text-align: left;
+                    font-size: 1.5rem;
+                }
+                .llamanos{
+                    text-align: center;
+                    font-size: .8rem;
+                }
+            }
+
+            .banner_img{
+                display: none;
+            }
+        }
     }
 
-    .main{
 
+    .main{
         .item__sociales{
             display: none;
         }
@@ -703,4 +738,86 @@ body{
             }
         }
     }
+
+    .footer{
+        padding: 10px;
+        background: none;
+        text-align: center;
+    }
 } 
+
+/* pagina gallery */
+@media(max-width:400px){
+    .main{
+        .tp{
+            font-size: 1.5rem;
+        }
+        .gallery{
+            width: auto;
+            margin-bottom: 10;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: 
+            "img10 img15"
+            "img10 img15"
+            "img10 img15"
+            "img11 img15"
+            "img12 img16"
+            "img13 img14 "
+            "img17 img17"
+            "img17 img17"
+            ;
+            .gallery__img{
+                width: 100%;
+            }
+        }
+        .conten__video{
+            margin: 0;
+            height: auto;
+        }
+        .carrousel{
+            object-fit: cover;
+        }
+    }
+}
+
+/* pagina sobre mi */
+@media(max-width:400px){
+    .main{
+        overflow: hidden;
+        .maps-ubi{
+            width: 100%;
+            .content__maps{
+                margin: 0;
+                .map{
+                    
+                }
+            }
+        }
+    }
+}
+
+/*pagina contacto*/
+@media(max-width:400px){
+    .main{
+        .socialnet{
+            display: flex;
+            .text__social{
+                flex-direction: column;
+                .parraf{
+                    font-size: 1rem;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+}
+
+/* pagina usuario */
+@media(max-width:400px){
+    .main{
+        .formulario{
+            padding-top: 20px;
+            margin-top: 0;
+        }
+    }
+}
