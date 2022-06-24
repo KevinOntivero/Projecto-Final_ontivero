@@ -8,7 +8,7 @@ body{
     width: 100%;
     height: auto;
     font-family: 'Montserrat', sans-serif;
-    background: url(img/background1.jpg);
+    background: url(../img/background1.jpg);
     
     
 }
@@ -754,7 +754,7 @@ body{
         }
         .gallery{
             width: auto;
-            margin-bottom: 10;
+            height: auto;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: 
             "img10 img15"
@@ -771,11 +771,7 @@ body{
             }
         }
         .conten__video{
-            margin: 0;
-            height: auto;
-        }
-        .carrousel{
-            object-fit: cover;
+            display: none;
         }
     }
 }
@@ -788,9 +784,6 @@ body{
             width: 100%;
             .content__maps{
                 margin: 0;
-                .map{
-                    
-                }
             }
         }
     }
