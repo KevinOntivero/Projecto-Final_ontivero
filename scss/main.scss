@@ -303,6 +303,15 @@ body{
     .card-border:hover{
         transform: scale(1.05);
     }
+    .btn{
+        display: flex;
+        justify-content: center;
+    }
+    .btn:hover{
+        background: rgb(218, 10, 10);
+        color: #fff;
+        box-shadow: 0 0 20px 0 #e60101;
+    }
 
     /* aos animated scroll */
     .animai{
@@ -522,10 +531,11 @@ body{
             margin: 20px 50px;
             font-family: 'Montserrat', sans-serif;
             color: #fff;
+            padding-bottom: 20px;
         }
     }
     
-    .maps-ubi{
+    .container{
         width: 100%;
         display: flex;
         justify-content: center;

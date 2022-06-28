@@ -435,6 +435,22 @@ body {
           transform: scale(1.05);
 }
 
+.main .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .btn:hover {
+  background: #da0a0a;
+  color: #fff;
+  -webkit-box-shadow: 0 0 20px 0 #e60101;
+          box-shadow: 0 0 20px 0 #e60101;
+}
+
 .main .animai {
   color: #fff;
   background: #000;
@@ -738,9 +754,10 @@ body {
   margin: 20px 50px;
   font-family: 'Montserrat', sans-serif;
   color: #fff;
+  padding-bottom: 20px;
 }
 
-.main .maps-ubi {
+.main .container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -753,12 +770,12 @@ body {
           align-items: center;
 }
 
-.main .maps-ubi .content__maps {
+.main .container .content__maps {
   height: auto;
   margin: 20px auto;
 }
 
-.main .maps-ubi .content__maps .text__maps {
+.main .container .content__maps .text__maps {
   padding: 30px;
   text-align: center;
   color: #fcc203;
